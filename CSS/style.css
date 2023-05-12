@@ -1,0 +1,142 @@
+/* reset.cssの内容をそのまま使用 */
+
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin-bottom: 40px; /* Update this to match the new footer height */
+}
+
+.container {
+  flex-grow: 1;
+  background-image: url(/image/トップ画像.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.main-left,
+.main-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.logo-container {
+  width: 100%;
+  height: auto;
+}
+
+.center-logo {
+  width: 500px;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.consept {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.consept h2 {
+  font-size: 19px;
+  color: #FFFFFF;
+  letter-spacing: 5px;
+  /* background-color: #333333; */
+  opacity: 0.9;
+}
+
+.consept .desktop {
+  display: block; /* PC版テキストを表示 */
+}
+
+.consept .mobile {
+  display: none; /* モバイル版テキストを非表示 */
+}
+
+footer {
+  background-color: #f5f5f5;
+  padding: 10px 0; /* Update this to reduce padding-top and padding-bottom */
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px; /* Update this to reduce the footer height */
+}
+
+.sns-icon ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sns-icon li {
+  margin: 0 40px;
+}
+
+.sns-icon a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fa-instagram,
+.fa-weixin,
+.fa-whatsapp {
+  font-size: 40px; /* Increase font-size */
+}
+
+.fa-instagram { color: #E1306C; }
+
+.fa-weixin { color: #7BB32E; }
+
+.fa-whatsapp { color: #25D366; }
+
+.main-right .consept {
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  .consept .desktop {
+    display: none; /* PC版テキストを非表示 */
+  }
+
+  .consept .mobile {
+    display: block; /* モバイル版テキストを表示 */
+    background-color: #333333;
+    opacity: 0.9;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+  .consept h2 {
+    font-size: 15px;
+    color: #FFFFFF;
+  }
+
+  .center-logo {
+    max-width: 80%;
+  }
+
+  .fa-instagram,
+  .fa-weixin,
+  .fa-whatsapp {
+    font-size: 40px; /* Update this to match the font-size for larger screens */
+  }
+
+}

@@ -1,0 +1,69 @@
+/* ナビゲーションのスタイル */
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* ハンバーガーメニューのスタイル */
+.hamburger {
+	display: none;
+	flex-direction: column;
+	cursor: pointer;
+}
+
+.line {
+	width: 25px;
+	height: 3px;
+	background-color: black;
+	margin: 5px;
+}
+
+/* レスポンシブ対応 */
+@media screen and (max-width: 768px) {
+	/* ハンバーガーメニューを表示 */
+	.hamburger {
+		display: flex;
+	}
+
+	/* ナビゲーションリンクを非表示 */
+	.nav-links {
+		display: none;
+	}
+
+	/* メニュー表示時のスタイル */
+	.nav-links.active {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		position: absolute;
+		top: 80px;
+		right: 0;
+		width: 100%;
+		background-color: white;
+		border: 1px solid black;
+	}
+
+	/* メニューリンクのスタイル */
+	.nav-links li {
+		margin: 20px;
+	}
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  width: 1300px;
+  height: 500px;
+  text-align: center;
+  align-items: center;
+  background-color: #E9A178;
+  background: linear-gradient(50deg, #E9A178, #FFE7CC);
+
+}
+
+.main-image img{
+  width: auto;
+  height: 400px;
+  /* margin-left: 100px; */
+}
