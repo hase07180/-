@@ -68,6 +68,14 @@ main {
   display: none; /* モバイル版テキストを非表示 */
 }
 
+.Map .desktop {
+  display: block; /* PC版テキストを表示 */
+}
+
+.Map .mobile {
+  display: none; /* モバイル版テキストを非表示 */
+}
+
 footer {
   background-color: #f5f5f5;
   padding: 10px 0; /* Update this to reduce padding-top and padding-bottom */
@@ -170,5 +178,15 @@ footer {
   .GoogleMap,
   .Address {
     width: 100%;
+  }
+
+  .Map .desktop {
+    display: none;
+  }
+
+  .Map .mobile {
+    display: block;
+    letter-spacing: 7px;
+    margin-bottom: 20px;
   }
 }
